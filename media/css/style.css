@@ -1,0 +1,162 @@
+.header,
+.footer {
+	padding: 20px;
+	text-align: center;
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+	background: rgb(77, 146, 186);
+	/* ----- */
+	/*max-width: 1050px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	width: 100%;
+	text-align: center;*/
+}
+.main {
+	
+}
+.block {
+	padding: 20px 0;
+	text-align: center;
+	/*justify-content: center;*/
+}
+
+.block__container {
+}
+
+.block__items {
+	display: flex;
+	flex-wrap: wrap;
+	/*gap: 10px;*/
+}
+@media (max-width: 767.98px) {
+	.block__items {
+		gap: 10px;
+		justify-content: center;
+	}
+}
+
+section {
+}
+
+.block-it {
+	display: block;
+	background-color: #1d7679;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	border: 2px solid #fff;
+}
+
+.block__item {
+	padding: 30px;
+	min-width: 150px;
+	flex: 0 0 33.333%;
+	border: 1px solid #000;
+	background-color: #7a956b;
+
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.block__images{
+	display: flex;
+	gap: 50px;
+	flex: 1 1 ;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 767.98px) {
+	.block__item {
+		flex: 1 1 80%;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.block__item {
+		padding: 15px;
+	}
+}
+.block__title {
+	font-size: 40px;
+	font-weight: 700;
+}
+@media (max-width: 1050px) {
+	.block__title {
+		font-size: 30px;
+		font-weight: 600;
+	}
+}
+
+.block__image {
+	width: 250px;
+	height: auto;
+	
+
+}
+.block__image-mob {
+	display: none;
+}
+
+.block__text {
+}
+
+.block__text-mobile {
+	display: none;
+}
+
+@media (max-width: 767.98px) {
+	.block__image {
+		display: none;
+	}
+	.block__image-mob {
+		display: block;
+	}
+	.block__text {
+		display: none;
+	}
+	.block__text-mobile {
+		display: flex;
+	}
+}
+
+
+/* БЭМ */
+
+/* Mobile First */
+/*@media (min-width: 540px) {
+	.block__items {
+		display: flex;
+	}
+}*/
+
+/* 
+Большие экраны - 1440px
+Маленькие экраны - не меньше 1024px
+Планшеты - от 1024 до 768
+Мобильные устройства - ниже 768
+
+*/
+
+/* Не более чем или равно 1110px (меньше или равно чем 1110px) */
+@media (max-width: 1109.5px) {
+}
+
+/* Более сложные условия */
+/*
+@media (min-width: 479.98px) and (max-width: 767.98px) {
+	.block__item {
+		background-color: #77608d;
+		padding: 20px;
+	}
+}
+*/
